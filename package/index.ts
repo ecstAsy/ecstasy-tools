@@ -1,1 +1,10 @@
-console.log("Hello World!");
+import {
+  checkType
+} from "./common";
+
+import isColor from "./is-color";
+
+export {
+  checkType,
+  isColor,
+}
