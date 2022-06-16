@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { MathTool } from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
 </script>
 
 <template>
@@ -31,6 +33,9 @@ const count = ref(0)
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <b>
+    {{MathTool.add(1.4,2)}}
+  </b>
 </template>
 
 <style scoped>

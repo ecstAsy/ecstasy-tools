@@ -1,5 +1,6 @@
 import { checkType } from "./dataType";
-
+import { MathTool } from "./math";
 export {
-  checkType
+  checkType,
+  MathTool
 }
