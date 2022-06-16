@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { MathTool } from "../../../package/index"
+import { Decimal } from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
@@ -34,7 +34,9 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <b>
-    {{MathTool.add(1.4,2)}}
+    {{Decimal(1.455,'floor')}}
+
+    {{Math.round(parseFloat('1.345')*100)}}
   </b>
 </template>
 
