@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Decimal } from "../../../package/index"
+import { DecimalFloorFormatter, ThousandFormatter } from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
@@ -34,9 +34,12 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <b>
-    {{Decimal(1.455,'floor')}}
 
     {{Math.round(parseFloat('1.345')*100)}}
+
+    {{DecimalFloorFormatter(0,3)}}
+
+    {{ThousandFormatter(134.6789)}}
   </b>
 </template>
 

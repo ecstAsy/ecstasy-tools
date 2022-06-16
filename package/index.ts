@@ -1,12 +1,18 @@
 import {
-  checkType, MathTool, Decimal
+  checkType, MathTool, 
 } from "./common";
-
+import {
+  DecimalFloorFormatter,
+  DecimalRoundFormatter,
+  ThousandFormatter,
+} from "./formatter";
 import isColor from "./is-color";
 
 export {
   checkType,
   MathTool,
-  Decimal,
+  DecimalFloorFormatter,
+  DecimalRoundFormatter,
+  ThousandFormatter,
   isColor,
 }
