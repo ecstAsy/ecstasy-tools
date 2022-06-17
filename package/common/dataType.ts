@@ -1,9 +1,9 @@
-/**
- * 类型判断
- * @value {* 数据}  
- * @returns @string
- */
- export const checkType = (value:any) => {
+ /**
+  * @description: 
+  * @param {any} value
+  * @return {*}
+  */
+ export const CheckType = (value:any) => {
   if (!value) {
     throw new Error('Function checkType (...args:value) is invalid!')
   }

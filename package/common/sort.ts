@@ -1,4 +1,9 @@
-// 中文字符排序
+/**
+ * @description: 
+ * @param {*} arr
+ * @param {*} dataLeven
+ * @return {*}
+ */
 export const SortChinese = (arr, dataLeven) => {
   /* 获取数组元素内需要比较的值 */
   function getValue(option) {

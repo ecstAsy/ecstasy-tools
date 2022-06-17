@@ -1,7 +1,9 @@
 // 常用方法
-import { checkType } from "./common/dataType";
+import { FunThrottle, FunDebounce } from "./common/fun"
+import { BlobExport } from "./common/blob";
+import { CheckType } from "./common/dataType";
 import { MathTool } from "./common/math";
-import { getRandomStr } from "./common/random"
+import { GetRandomStr } from "./common/random"
 import { SortChinese } from "./common/sort";
 import { LocalStorage, SessionStorage } from "./common/storage"
 
@@ -20,9 +22,12 @@ import isColor from "./is-color";
 
 export {
   // 常用方法
-  checkType,
+  FunThrottle,
+  FunDebounce,
+  BlobExport,
+  CheckType,
   MathTool,
-  getRandomStr,
+  GetRandomStr,
   SortChinese,
   LocalStorage,
   SessionStorage,

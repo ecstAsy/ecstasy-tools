@@ -1,5 +1,7 @@
-/*
- * 判断obj是否为一个整数
+/**
+ * @description: 
+ * @param {number} obj
+ * @return {*}
  */
 function isInteger (obj:number):boolean {
   return Math.floor(obj) === obj;

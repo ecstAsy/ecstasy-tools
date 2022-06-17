@@ -3,7 +3,7 @@
  * @param {*num}
  * @return {*res}
  */
- export const getRandomStr = (num: number):string => {
+ export const GetRandomStr = (num: number):string => {
   const NUM:number = num || 32;
   const Str = "ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz0123456789";
   let res:string = "";
