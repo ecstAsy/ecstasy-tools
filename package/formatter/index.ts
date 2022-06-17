@@ -4,8 +4,15 @@ import {
   ThousandFormatter, 
 } from "./number";
 
+import {
+  MoneyUppercaseFormatter,
+  MoneyThousandFormatter
+} from "./money";
 export {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter, 
+
+  MoneyUppercaseFormatter,
+  MoneyThousandFormatter
 }

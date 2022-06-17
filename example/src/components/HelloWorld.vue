@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DecimalFloorFormatter, ThousandFormatter } from "../../../package/index"
+import {
+  DecimalFloorFormatter, ThousandFormatter, MoneyUppercaseFormatter,
+  MoneyThousandFormatter
+} from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
@@ -40,6 +43,10 @@ const count = ref(0)
     {{DecimalFloorFormatter(0,3)}}
 
     {{ThousandFormatter(134.6789)}}
+
+    {{MoneyUppercaseFormatter(10.34)}}
+
+    {{MoneyThousandFormatter(1.2345)}}
   </b>
 </template>
 

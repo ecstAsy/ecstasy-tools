@@ -5,6 +5,8 @@ import {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter,
+  MoneyUppercaseFormatter,
+  MoneyThousandFormatter
 } from "./formatter";
 import isColor from "./is-color";
 
@@ -14,5 +16,7 @@ export {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter,
+  MoneyUppercaseFormatter,
+  MoneyThousandFormatter,
   isColor,
 }

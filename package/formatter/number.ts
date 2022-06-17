@@ -12,7 +12,7 @@ export const DecimalFloorFormatter = (
   // 如果不是number 返回 0.00
   let _value = parseFloat(`${value}`);
   
-  if (isNaN(_value)) return "0.00";
+  if (isNaN(_value)) return "0";
   // 如果是数值
   _value = Math.floor(+value * Math.pow(10, decimal)) / Math.pow(10, decimal);
   let str = _value.toString();
@@ -43,7 +43,7 @@ export const DecimalRoundFormatter = (
   // 如果不是number 返回 0.00
   let _value = parseFloat(`${value}`);
   
-  if (isNaN(_value)) return "0.00";
+  if (isNaN(_value)) return "0";
   // 如果是数值
   _value = Math.round(+value * Math.pow(10, decimal)) / Math.pow(10, decimal);
   let str = _value.toString();
