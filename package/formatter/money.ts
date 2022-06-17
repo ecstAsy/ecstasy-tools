@@ -1,5 +1,5 @@
 import { DecimalRoundFormatter } from "./number";
-// import { MathTool } from "../common/index";
+// import { MathTool } from "../common/math";
 /*
  * 金钱大写格式化
  * @param value {any}
