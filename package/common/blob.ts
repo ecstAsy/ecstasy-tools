@@ -19,3 +19,22 @@ export const BlobExport = async (config: {
   document.body.removeChild(downloadElement); // 下载完成移除元素
   window.URL.revokeObjectURL(href);
 }
+
+/**
+ * @description: 一键复制内容到剪切板
+ * @param {string} value
+ * @return {*}
+ */
+export const CopyTextToClipboard = (value:string | number) => {
+  var textArea:any = document.createElement("textarea");
+  textArea.style.background = 'transparent';
+  textArea.value = value;
+  document.body.appendChild(textArea);
+  textArea.select();
+  try {
+    document.execCommand('copy');
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+  document.body.removeChild(textArea);
+}

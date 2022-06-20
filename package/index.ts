@@ -1,6 +1,7 @@
 // 常用方法
 import { FunThrottle, FunDebounce } from "./common/fun"
-import { BlobExport } from "./common/blob";
+import { BlobExport, CopyTextToClipboard } from "./common/blob";
+import { ScrollToTop } from "./common/scroll";
 import {
   CheckType,
   isType,
@@ -12,7 +13,7 @@ import {
 } from "./common/dataType";
 import { MathTool } from "./common/math";
 import { GetRandomStr, GetRandomColor } from "./common/random";
-import { SortChinese } from "./common/sort";
+import { ChineseSort, NumberSort } from "./common/sort";
 import { LocalStorage, SessionStorage } from "./common/storage";
 import {
   ClearSpaceLine,
@@ -21,7 +22,8 @@ import {
   GetArraySum,
   GetObjectFromArray,
   ObjectPicker,
-  ArrayUnique
+  ArrayUnique,
+  ArrayIntersect
 } from "./common/process";
 import {
   isAvailableEmail,
@@ -52,6 +54,8 @@ export {
   FunThrottle,
   FunDebounce,
   BlobExport,
+  CopyTextToClipboard,
+  ScrollToTop,
   CheckType,
   isType,
   isArray,
@@ -62,7 +66,8 @@ export {
   MathTool,
   GetRandomStr,
   GetRandomColor,
-  SortChinese,
+  ChineseSort,
+  NumberSort,
   LocalStorage,
   SessionStorage,
   ClearSpaceLine,
@@ -72,6 +77,7 @@ export {
   GetObjectFromArray,
   ObjectPicker,
   ArrayUnique,
+  ArrayIntersect,
   isAvailableEmail,
   isAvailablePhone,
   isAvailableUrl,

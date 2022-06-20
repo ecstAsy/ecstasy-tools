@@ -2,12 +2,15 @@
 import { ref } from 'vue'
 import {
   DecimalFloorFormatter, ThousandFormatter, MoneyUppercaseFormatter,
-  MoneyThousandFormatter
+  MoneyThousandFormatter,ArrayIntersect
 } from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+console.log(ArrayIntersect([2,3,4],[3,4,5]));
+
 
 </script>
 

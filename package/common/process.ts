@@ -1,3 +1,4 @@
+import { isContains } from "./dataType";
 /**
  * @description: 去除空格和换行
  * @param {string} value
@@ -86,3 +87,22 @@ export const ObjectPicker = (info: any, values: Array<string>) => {
  * @return {*}
  */
 export const ArrayUnique = (values: Array<any>) => [...new Set(values)];
+
+/**
+ * @description: 数组并集
+ * @param {Array} arrya
+ * @param {Array} arryb
+ * @return {*}
+ */
+export const ArrayUnion = (arrya: Array<any>, arryb: Array<any>) => ArrayUnique([...arrya, ...arryb]);
+
+/**
+ * @description: 数组交集
+ * @param {Array} arrya
+ * @param {Array} arryb
+ * @return {*}
+ */
+export const ArrayIntersect = (arrya: Array<any>, arryb: Array<any>) => {
+  const arr = ArrayUnique(arrya);
+  return arr.filter(item=> isContains(arryb, item) && item)
+}
