@@ -14,7 +14,12 @@ import { MathTool } from "./common/math";
 import { GetRandomStr, GetRandomColor } from "./common/random"
 import { SortChinese } from "./common/sort";
 import { LocalStorage, SessionStorage } from "./common/storage"
-import {ClearSpaceLine} from "./common/process"
+import {
+  ClearSpaceLine,
+  GetQueryParam,
+  GetArraySum,
+  GetObjectFromArray
+} from "./common/process"
 
 // 格式化方法
 import {
@@ -48,6 +53,9 @@ export {
   LocalStorage,
   SessionStorage,
   ClearSpaceLine,
+  GetQueryParam,
+  GetArraySum,
+  GetObjectFromArray,
   // 格式化方法
   DecimalFloorFormatter,
   DecimalRoundFormatter,
