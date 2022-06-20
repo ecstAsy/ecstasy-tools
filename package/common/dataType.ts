@@ -19,4 +19,41 @@
     case Number:
       return 'Number'
   }
-}
+ }
+
+/**
+ * @arg {* 数据}  
+ * @_type {* 类型}  
+ * @returns @Boolen
+ */
+export const isType = (arg:any, _type:'Array' | 'Object' | 'String' | 'Function' | 'Number'):boolean => arg.constructor === _type
+
+/**
+* @arg {* 数据}  
+* @returns @Boolen
+*/
+export const isArray = (arg:any):boolean => arg.constructor === Array
+
+/**
+* @arg {* 数据}  
+* @returns @Boolen
+*/
+export const isObject = (arg:any):boolean => arg.constructor === Object
+
+/**
+* @arg {* 数据} 
+* @returns @Boolen
+*/
+export const isString = (arg:any):boolean => arg.constructor === String
+
+/**
+* @arg {* 数据}  
+* @returns @Boolen
+*/
+export const isFunc = (arg:any):boolean => arg.constructor === Function
+
+/**
+* @arg  {* 数据} 
+* @returns @Boolen
+*/
+export const isNumber = (arg:any):boolean => arg.constructor === Number

@@ -1,7 +1,15 @@
 // 常用方法
 import { FunThrottle, FunDebounce } from "./common/fun"
 import { BlobExport } from "./common/blob";
-import { CheckType } from "./common/dataType";
+import {
+  CheckType,
+  isType,
+  isArray,
+  isObject,
+  isString,
+  isFunc,
+  isNumber
+} from "./common/dataType";
 import { MathTool } from "./common/math";
 import { GetRandomStr, GetRandomColor } from "./common/random"
 import { SortChinese } from "./common/sort";
@@ -26,6 +34,12 @@ export {
   FunDebounce,
   BlobExport,
   CheckType,
+  isType,
+  isArray,
+  isObject,
+  isString,
+  isFunc,
+  isNumber,
   MathTool,
   GetRandomStr,
   GetRandomColor,
