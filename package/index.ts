@@ -3,7 +3,7 @@ import { FunThrottle, FunDebounce } from "./common/fun"
 import { BlobExport } from "./common/blob";
 import { CheckType } from "./common/dataType";
 import { MathTool } from "./common/math";
-import { GetRandomStr } from "./common/random"
+import { GetRandomStr, GetRandomColor } from "./common/random"
 import { SortChinese } from "./common/sort";
 import { LocalStorage, SessionStorage } from "./common/storage"
 
@@ -28,6 +28,7 @@ export {
   CheckType,
   MathTool,
   GetRandomStr,
+  GetRandomColor,
   SortChinese,
   LocalStorage,
   SessionStorage,
