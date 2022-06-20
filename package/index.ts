@@ -18,7 +18,8 @@ import {
   ClearSpaceLine,
   GetQueryParam,
   GetArraySum,
-  GetObjectFromArray
+  GetObjectFromArray,
+  ObjectPicker
 } from "./common/process"
 
 // 格式化方法
@@ -29,7 +30,8 @@ import {
 } from "./formatter/number";
 import {
   MoneyUppercaseFormatter,
-  MoneyThousandFormatter
+  MoneyThousandFormatter,
+  MoneyPointFormatter
 } from "./formatter/money";
 
 import isColor from "./is-color";
@@ -56,11 +58,13 @@ export {
   GetQueryParam,
   GetArraySum,
   GetObjectFromArray,
+  ObjectPicker,
   // 格式化方法
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter,
   MoneyUppercaseFormatter,
   MoneyThousandFormatter,
+  MoneyPointFormatter,
   isColor,
 }

@@ -109,3 +109,21 @@ export const MoneyThousandFormatter = (
   }
   return valueMap.regular;
 }
+
+/**
+ * @description: 金额计算（精确到分，不足一分向上进一）
+ * @param {any} value
+ * @return {*}
+ */
+export const MoneyPointFormatter = (value: any) => {
+  let f = parseFloat(value);
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(f)) {
+    return false;
+  }
+  let rs = f.toString().split(".");
+  if (rs.length !== 1 && rs[1].length > 2) {
+    f = Math.ceil(value * 100) / 100;
+  }
+  return f;
+}

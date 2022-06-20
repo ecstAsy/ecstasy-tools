@@ -44,3 +44,19 @@ export const GetObjectFromArray = (values:Array<any>, field: string) => {
   })
   return _obj;
 }
+
+/**
+ * @description: 对象快速赋值
+ * @param {any} info
+ * @param {Array} values
+ * @return {*}
+ */
+export const ObjectPicker = (info: any, values: Array<string>) => {
+  let _obj: {
+    [proppname:string]: any
+  } = {};
+  values.map(item => {
+    _obj[item] = info[item]
+  })
+  return _obj
+}
