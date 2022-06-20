@@ -11,17 +11,24 @@ import {
   isNumber
 } from "./common/dataType";
 import { MathTool } from "./common/math";
-import { GetRandomStr, GetRandomColor } from "./common/random"
+import { GetRandomStr, GetRandomColor } from "./common/random";
 import { SortChinese } from "./common/sort";
-import { LocalStorage, SessionStorage } from "./common/storage"
+import { LocalStorage, SessionStorage } from "./common/storage";
 import {
   ClearSpaceLine,
   GetQueryParam,
+  GetUrlQuerys,
   GetArraySum,
   GetObjectFromArray,
   ObjectPicker,
   ArrayUnique
-} from "./common/process"
+} from "./common/process";
+import {
+  isAvailableEmail,
+  isAvailablePhone,
+  isAvailableUrl,
+  isAvailableIdentity
+} from "./common/regexp"
 
 // 格式化方法
 import {
@@ -34,6 +41,9 @@ import {
   MoneyThousandFormatter,
   MoneyPointFormatter
 } from "./formatter/money";
+import {
+  GetNowTime
+} from "./formatter/time";
 
 import isColor from "./is-color";
 
@@ -57,10 +67,15 @@ export {
   SessionStorage,
   ClearSpaceLine,
   GetQueryParam,
+  GetUrlQuerys,
   GetArraySum,
   GetObjectFromArray,
   ObjectPicker,
   ArrayUnique,
+  isAvailableEmail,
+  isAvailablePhone,
+  isAvailableUrl,
+  isAvailableIdentity,
   // 格式化方法
   DecimalFloorFormatter,
   DecimalRoundFormatter,
@@ -68,5 +83,6 @@ export {
   MoneyUppercaseFormatter,
   MoneyThousandFormatter,
   MoneyPointFormatter,
+  GetNowTime,
   isColor,
 }

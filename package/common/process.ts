@@ -23,6 +23,24 @@ export const GetQueryParam = (name: string) => {
 }
 
 /**
+ * @description: 获取路由中所有参数
+ * @param {string} url
+ * @return {*}
+ */
+export const GetUrlQuerys = (url: string = window.location.href) => {
+  const _url:Array<string> = url.split('?');
+  let _obj: {
+    [proppname:string]: any
+  } = {};
+  if (_url.length === 1) {
+    return _obj;
+  }
+  const _urlArry = _url[1].split('#')[0].split('&');
+  _urlArry.map(item=>_obj[item[0]] = item[1])
+  return _obj;
+}
+
+/**
  * @description: 数组求和
  * @param {Array} values
  * @return {*}
