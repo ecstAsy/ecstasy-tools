@@ -35,6 +35,7 @@ export const GetArraySum = (values: Array<number>) => values.reduce((sum, item) 
  * @param {string} field
  * @return {*}
  */
+
 export const GetObjectFromArray = (values:Array<any>, field: string) => {
   let _obj: {
     [proppname:string | number]: any
@@ -60,3 +61,10 @@ export const ObjectPicker = (info: any, values: Array<string>) => {
   })
   return _obj
 }
+
+/**
+ * @description: 数组去重
+ * @param {Array} values
+ * @return {*}
+ */
+export const ArrayUnique = (values: Array<any>) => [...new Set(values)];

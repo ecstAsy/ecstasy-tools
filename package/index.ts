@@ -19,7 +19,8 @@ import {
   GetQueryParam,
   GetArraySum,
   GetObjectFromArray,
-  ObjectPicker
+  ObjectPicker,
+  ArrayUnique
 } from "./common/process"
 
 // 格式化方法
@@ -59,6 +60,7 @@ export {
   GetArraySum,
   GetObjectFromArray,
   ObjectPicker,
+  ArrayUnique,
   // 格式化方法
   DecimalFloorFormatter,
   DecimalRoundFormatter,
