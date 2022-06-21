@@ -9,7 +9,8 @@ import {
   isObject,
   isString,
   isFunc,
-  isNumber
+  isNumber,
+  isContains
 } from "./common/dataType";
 import { MathTool } from "./common/math";
 import { GetRandomStr, GetRandomColor } from "./common/random";
@@ -23,6 +24,7 @@ import {
   GetObjectFromArray,
   ObjectPicker,
   ArrayUnique,
+  ArrayUnion,
   ArrayIntersect
 } from "./common/process";
 import {
@@ -63,6 +65,7 @@ export {
   isString,
   isFunc,
   isNumber,
+  isContains,
   MathTool,
   GetRandomStr,
   GetRandomColor,
@@ -77,6 +80,7 @@ export {
   GetObjectFromArray,
   ObjectPicker,
   ArrayUnique,
+  ArrayUnion,
   ArrayIntersect,
   isAvailableEmail,
   isAvailablePhone,
