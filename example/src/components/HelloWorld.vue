@@ -2,15 +2,16 @@
 import { ref } from 'vue';
 import {
   DecimalFloorFormatter, ThousandFormatter, MoneyUppercaseFormatter,
-  MoneyThousandFormatter,ArrayIntersect
+  MoneyThousandFormatter,ArrayIntersect,NumberUppercaseFormatter
 } from "../../../package/index"
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
 
-console.log(ArrayIntersect([2,3,4],[3,4,5]));
+// console.log(ArrayIntersect([2,3,4],[3,4,5]));
 
+console.log(`${Math.pow(2,105)}`.length);
 
 </script>
 
@@ -50,6 +51,8 @@ console.log(ArrayIntersect([2,3,4],[3,4,5]));
     {{MoneyUppercaseFormatter(10.34)}}
 
     {{MoneyThousandFormatter(1.2345)}}
+    1010
+    {{NumberUppercaseFormatter(null)}}
   </b>
 </template>
 

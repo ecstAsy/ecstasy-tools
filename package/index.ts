@@ -39,6 +39,7 @@ import {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter, 
+  NumberUppercaseFormatter
 } from "./formatter/number";
 import {
   MoneyUppercaseFormatter,
@@ -90,6 +91,7 @@ export {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
   ThousandFormatter,
+  NumberUppercaseFormatter,
   MoneyUppercaseFormatter,
   MoneyThousandFormatter,
   MoneyPointFormatter,
