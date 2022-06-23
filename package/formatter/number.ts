@@ -1,4 +1,3 @@
-import { isNumber } from "package/common/dataType";
 /**
  * @description: 转化为 n 位小数 （下舍入）
  * @param {string | number | null | undefined} value
