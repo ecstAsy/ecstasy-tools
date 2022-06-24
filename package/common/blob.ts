@@ -1,6 +1,7 @@
 /**
  * @description: blob 导出文件
- * @return {*}
+ * @param {any} config
+ * @return {void}
  */
 export const BlobExport = async (config: {
   url: string
@@ -23,7 +24,7 @@ export const BlobExport = async (config: {
 /**
  * @description: 一键复制内容到剪切板
  * @param {string} value
- * @return {*}
+ * @return {void}
  */
 export const CopyTextToClipboard = (value:string | number) => {
   var textArea:any = document.createElement("textarea");

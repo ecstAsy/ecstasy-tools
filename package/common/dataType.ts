@@ -1,5 +1,5 @@
  /**
-  * @description: 
+  * @description: 类型判断
   * @param {any} value
   * @return {*}
   */
@@ -22,34 +22,39 @@
  }
 
 /**
- * @arg {* 数据}  
- * @_type {* 类型}  
- * @returns @Boolen
+ * @description: 类型校验
+ * @param {any} arg
+ * @param {Array | Object | String | Function | Number} _type
+ * @returns {boolean}
  */
 export const isType = (arg: any, _type: 'Array' | 'Object' | 'String' | 'Function' | 'Number'): boolean => arg.constructor === _type;
 
 /**
-* @arg {* 数据}  
-* @returns @Boolen
-*/
+ * @description: 是否为Array
+ * @param {any} arg
+ * @return {boolean}
+ */
 export const isArray = (arg: any): boolean => arg.constructor === Array;
 
 /**
-* @arg {* 数据}  
-* @returns @Boolen
-*/
+ * @description: 是否为Object
+ * @param {any} arg
+ * @return {boolean}
+ */
 export const isObject = (arg: any): boolean => arg.constructor === Object;
 
 /**
-* @arg {* 数据} 
-* @returns @Boolen
-*/
+ * @description: 是否为String
+ * @param {any} arg
+ * @return {boolean}
+ */
 export const isString = (arg: any): boolean => arg.constructor === String;
 
 /**
-* @arg {* 数据}  
-* @returns @Boolen
-*/
+ * @description: 是否为Function
+ * @param {any} arg
+ * @return {boolean}
+ */
 export const isFunc = (arg: any): boolean => arg.constructor === Function;
 
 /**
@@ -63,7 +68,7 @@ export const isNumber = (arg: any): boolean => arg.constructor === Number;
  * @param {Array} arry
  * @param {any} val
  * @param {string} level
- * @return {*}
+ * @return {boolean}
  */
 export const isContains = (arry: Array<any>, val: any, level?: string): boolean => {
   let hasEl:boolean = false;
