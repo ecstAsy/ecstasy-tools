@@ -9,14 +9,14 @@ class EtStorage {
     this.storage = type === StorageType.local ? window.localStorage : window.sessionStorage;
   }
   
-  set(key: string, value: any) {
+  setItem(key: string, value: any) {
     if (typeof value === 'object') {
       value = JSON.stringify(value);
     }
     this.storage.setItem(key, value);
   }
 
-  get(key: string) {
+  getItem(key: string) {
     const value = this.storage.getItem(key);
     try {
       return JSON.parse(value);
@@ -25,7 +25,7 @@ class EtStorage {
     }
   }
 
-  delete(key: string) {
+  removeItem(key: string) {
     this.storage.removeItem(key);
   }
 
