@@ -1,9 +1,9 @@
- /**
-  * @description: 类型判断
-  * @param {any} value
-  * @return {*}
-  */
- export const CheckType = (value:any) => {
+/**
+ * @description: 类型判断
+ * @param {any} value
+ * @return {*}
+ */
+export const CheckType = (value: any) => {
   if (!value) {
     throw new Error('Function checkType (...args:value) is invalid!');
   }
@@ -19,7 +19,7 @@
     case Number:
       return 'Number';
   }
- }
+};
 
 /**
  * @description: 类型校验
@@ -27,7 +27,10 @@
  * @param {Array | Object | String | Function | Number} _type
  * @returns {boolean}
  */
-export const isType = (arg: any, _type: 'Array' | 'Object' | 'String' | 'Function' | 'Number'): boolean => arg.constructor === _type;
+export const isType = (
+  arg: any,
+  _type: 'Array' | 'Object' | 'String' | 'Function' | 'Number'
+): boolean => arg.constructor === _type;
 
 /**
  * @description: 是否为Array
@@ -58,9 +61,9 @@ export const isString = (arg: any): boolean => arg.constructor === String;
 export const isFunc = (arg: any): boolean => arg.constructor === Function;
 
 /**
-* @arg  {* 数据} 
-* @returns @Boolen
-*/
+ * @arg  {* 数据}
+ * @returns @Boolen
+ */
 export const isNumber = (arg: any): boolean => arg.constructor === Number;
 
 /**
@@ -70,13 +73,31 @@ export const isNumber = (arg: any): boolean => arg.constructor === Number;
  * @param {string} level
  * @return {boolean}
  */
-export const isContains = (arry: Array<any>, val: any, level?: string): boolean => {
-  let hasEl:boolean = false;
+export const isContains = (
+  arry: Array<any>,
+  val: any,
+  level?: string
+): boolean => {
+  let hasEl: boolean = false;
   if (!level) {
     hasEl = arry.indexOf(val) !== -1;
   } else {
-    hasEl = !!arry.find(item => item[level] === val);
+    hasEl = !!arry.find((item) => item[level] === val);
   }
 
-  return hasEl
-}
+  return hasEl;
+};
+
+/**
+ * @description: 判断是否是闰年
+ * @param {string | number} year
+ * @return {* boolean}
+ */
+export const isLeapYear = (year: string | number): boolean => {
+  let is_leap: boolean = false;
+  const _year: number = +year;
+  if ((0 === _year % 4 && 0 !== _year % 100) || 0 === _year % 400) {
+    is_leap = true;
+  }
+  return is_leap;
+};

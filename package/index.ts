@@ -1,7 +1,7 @@
 // 常用方法
-import { FunThrottle, FunDebounce } from "./common/fun"
-import { BlobExport, CopyTextToClipboard } from "./common/blob";
-import { ScrollToTop } from "./common/scroll";
+import { FunThrottle, FunDebounce } from './common/fun';
+import { BlobExport, CopyTextToClipboard } from './common/blob';
+import { ScrollToTop } from './common/scroll';
 import {
   CheckType,
   isType,
@@ -10,12 +10,13 @@ import {
   isString,
   isFunc,
   isNumber,
-  isContains
-} from "./common/dataType";
-import { MathTool } from "./common/math";
-import { GetRandomStr, GetRandomColor } from "./common/random";
-import { ChineseSort, NumberSort } from "./common/sort";
-import { LocalStorage, SessionStorage } from "./common/storage";
+  isContains,
+  isLeapYear,
+} from './common/dataType';
+import { MathTool } from './common/math';
+import { GetRandomStr, GetRandomColor } from './common/random';
+import { ChineseSort, NumberSort } from './common/sort';
+import { LocalStorage, SessionStorage } from './common/storage';
 import {
   ClearSpaceLine,
   GetQueryParam,
@@ -25,32 +26,30 @@ import {
   ObjectPicker,
   ArrayUnique,
   ArrayUnion,
-  ArrayIntersect
-} from "./common/process";
+  ArrayIntersect,
+} from './common/process';
 import {
   isAvailableEmail,
   isAvailablePhone,
   isAvailableUrl,
-  isAvailableIdentity
-} from "./common/regexp"
+  isAvailableIdentity,
+} from './common/regexp';
 
 // 格式化方法
 import {
   DecimalFloorFormatter,
   DecimalRoundFormatter,
-  ThousandFormatter, 
-  NumberUppercaseFormatter
-} from "./formatter/number";
+  ThousandFormatter,
+  NumberUppercaseFormatter,
+} from './formatter/number';
 import {
   MoneyUppercaseFormatter,
   MoneyThousandFormatter,
-  MoneyPointFormatter
-} from "./formatter/money";
-import {
-  GetNowTime
-} from "./formatter/time";
+  MoneyPointFormatter,
+} from './formatter/money';
+import { GetNowTime } from './formatter/time';
 
-import isColor from "./is-color";
+import isColor from './is-color';
 
 export {
   // 常用方法
@@ -67,6 +66,7 @@ export {
   isFunc,
   isNumber,
   isContains,
+  isLeapYear,
   MathTool,
   GetRandomStr,
   GetRandomColor,
@@ -97,4 +97,4 @@ export {
   MoneyPointFormatter,
   GetNowTime,
   isColor,
-}
+};
